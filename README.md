@@ -56,7 +56,7 @@ The system:
 
 To maintain **global consistency** and correct for **drift** over time, the system incorporates **loop closure detection** using [RTAB-Map](http://introlab.github.io/rtabmap/), a real-time appearance-based mapping library.
 
-<p align="center">
+<p>
   <img src="rtab.png" width="45%" />
   <img src="loop_closure.png" width="45%" />
 </p>
