@@ -119,7 +119,7 @@ cd ~/ros2_ws/src
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/autonomous-rtabmap.git](https://github.com/rishang19dx/Robot-Localization-Package.git
+git clone https://github.com/rishang19dx/Robot-Localization-Package.git
 ```
 
 ### 3. Install RTAB-Map ROS Package
