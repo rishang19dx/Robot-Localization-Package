@@ -119,7 +119,7 @@ cd ~/ros2_ws/src
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/autonomous-rtabmap.git
+git clone https://github.com/your-repo/autonomous-rtabmap.git](https://github.com/rishang19dx/Robot-Localization-Package.git
 ```
 
 ### 3. Install RTAB-Map ROS Package
@@ -146,14 +146,18 @@ source install/setup.bash
 
 ## Usage
 
+<p>
+  <img src="Mapping.png" width="45%" />
+  <img src="localization.png" width="45%" />
+</p>
+
 ### Mapping Mode
 
 #### 1. Launch Mapping
 
 ```bash
-ros2 launch autonomous_rtabmap mapping_launch.py
+ros2 launch tortoisebot_gazebo rtabmap_tortoise.launch.py
 ```
-![Mapping](Mapping.png)
 
 #### 2. Manually Drive the Robot for Proper Mapping
 
@@ -168,9 +172,8 @@ Use RViz2 to visualize loop closure detections and ensure map consistency.
 #### Launch Localization
 
 ```bash
-ros2 launch autonomous_rtabmap localization_launch.py
+ros2 launch tortoisebot_gazebo rtabmap_tortoise.launch.py localization:=True
 ```
-![localization](localization.png)
 ---
 
 ## System Architecture
