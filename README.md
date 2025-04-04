@@ -44,8 +44,6 @@ This **multi-sensor approach** ensures robust performance in environments with:
 - Limited visual features
 - Large-scale, complex environments
 
-![Workflow](workflow.png)
-
 The system:
 
 1. **Creates a detailed 3D map** of the environment.
@@ -56,10 +54,9 @@ The system:
 
 To maintain **global consistency** and correct for **drift** over time, the system incorporates **loop closure detection** using [RTAB-Map](http://introlab.github.io/rtabmap/), a real-time appearance-based mapping library.
 
-<p>
-  <img src="rtab.png" width="45%" />
-  <img src="loop_closure.png" width="45%" />
-</p>
+
+<img src="rtab.png" width="45%" />
+<img src="loop_closure.png" width="45%" />
 
 ### 🔍 Loop Closure Detection
 
@@ -85,7 +82,7 @@ To maintain **global consistency** and correct for **drift** over time, the syst
 ---
 
 ### LiDAR Integration
-
+![LiDAR Integration](lidar.png)
 While RTAB-Map primarily focuses on **visual SLAM**, our implementation integrates **LiDAR sensors** to:
 
 - **Improve depth accuracy** in low-light conditions.
@@ -155,6 +152,7 @@ source install/setup.bash
 ```bash
 ros2 launch autonomous_rtabmap mapping_launch.py
 ```
+![Mapping](Mapping.png)
 
 #### 2. Manually Drive the Robot for Proper Mapping
 
@@ -171,12 +169,12 @@ Use RViz2 to visualize loop closure detections and ensure map consistency.
 ```bash
 ros2 launch autonomous_rtabmap localization_launch.py
 ```
-
+![localization](localization.png)
 ---
 
 ## System Architecture
 
-> Add a system architecture diagram here showing ROS nodes and sensor data flow.
+![Workflow](workflow.png)
 
 ---
 
@@ -202,7 +200,7 @@ ros2 launch autonomous_rtabmap localization_launch.py
 
 ---
 
-## Additional Demo
+## Video Demonstration
+[![Watch the video](https://img.youtube.com/vi/gmw5N7nBYmI/hqdefault.jpg)](https://youtu.be/gmw5N7nBYmI)
 
-> Include demo video or screenshots of successful localization and mapping.
 
